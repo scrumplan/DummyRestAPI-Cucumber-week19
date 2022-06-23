@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Testing the employee features on the Dummy Rest API application" skipped="0" tests="3" time="4.9" timestamp="2022-06-23T21:05:46.865+01:00[Europe/London]"><testcase name="Create a new employee &amp; verify if the employee is added"><failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;429&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;429&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;429&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+com.restapiexample.Dummy.cucumber.steps.EmployeeStepdefs.iCreateANewEmployeeByProvidingTheInformationNameSalaryAndAge(EmployeeStepdefs.java:32)&#13;
+✽.When I create a new employee by providing the information name salary and age(employee.feature:5)&#13;
+</system-err></testcase><testcase name="Updating the employee created and verify it is updated with status 200"/><testcase name="Deleting the employee created and verify it is deleted"/></testsuite>
